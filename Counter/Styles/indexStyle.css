@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Righteous", cursive;
+}
+/* -------- Beginning of Body Section ------------- */
+body {
+  background: black;
+}
+.Container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  width: 60vw;
+  height: 40vh;
+
+  /* centering css */
+  margin-top: calc((100vh - 40vh) * 1 / 2);
+  margin-left: calc((100vw - 60vw) * 1 / 2);
+  /* ------------ */
+
+  /* background: red; */
+}
+
+.subContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  height: 30%;
+
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.middle {
+  height: 55%;
+
+  font-size: 3rem;
+  color: turquoise;
+}
+
+.bottom {
+  height: 15%;
+  width: 100%;
+  padding: 2px;
+
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.btn {
+  padding: 3px;
+
+  background: black;
+  border: white solid 2px;
+  border-radius: 4px;
+
+  color: white;
+  text-transform: lowercase;
+  font-size: 1.2rem;
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: turquoise solid 2px;
+  color: turquoise;
+}
